@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.NewsCreatorFragment">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <ImageView
+          android:id="@+id/news_cross"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_marginTop="16dp"
+          android:layout_marginEnd="16dp"
+          android:contentDescription="@string/image_des"
+          android:elevation="10dp"
+          android:src="@drawable/cross"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <ImageView
+          android:id="@+id/news_group_image"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="-12dp"
+          android:contentDescription="@string/image_des"
+          android:scaleType="fitXY"
+          android:src="@drawable/join_as_creator_group"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/news_cross" />
+
+      <TextView
+          android:id="@+id/textView6"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="8dp"
+          android:layout_marginTop="64dp"
+          android:text="@string/news_creator"
+          android:textColor="@color/profile_color_text"
+          android:textSize="24sp"
+          android:textStyle="bold"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/news_group_image" />
+
+      <TextView
+          android:id="@+id/textView7"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:text="@string/your_choice"
+          android:textColor="@color/text_color"
+          android:textSize="16sp"
+          app:layout_constraintEnd_toEndOf="@+id/textView6"
+          app:layout_constraintStart_toStartOf="@+id/textView6"
+          app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+      <TextView
+          android:id="@+id/textView8"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="24dp"
+          android:text="@string/here_what"
+          android:textColor="@color/text_color"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="@+id/textView7"
+          app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+      <ImageView
+          android:id="@+id/imageView5"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginStart="16dp"
+          android:layout_marginTop="16dp"
+          android:contentDescription="@string/image_des"
+          android:src="@drawable/about_us"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+      <TextView
+          android:id="@+id/textView9"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="18dp"
+          android:layout_marginEnd="16dp"
+          android:text="@string/get_work"
+          android:textColor="@color/text_color"
+          android:textSize="16sp"
+          app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toEndOf="@+id/imageView5"
+          app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+      <ImageView
+          android:id="@+id/imageView6"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginTop="24dp"
+          android:contentDescription="@string/image_des"
+          android:src="@drawable/tnc"
+          app:layout_constraintStart_toStartOf="@+id/imageView5"
+          app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+      <TextView
+          android:id="@+id/textView11"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="20dp"
+          android:text="@string/get_direct"
+          android:textColor="@color/text_color"
+          android:textSize="16sp"
+          app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="@+id/textView9"
+          app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+      <ImageView
+          android:id="@+id/imageView7"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          android:contentDescription="@string/image_des"
+          android:src="@drawable/join_grow_with_us"
+          app:layout_constraintStart_toStartOf="@+id/imageView6"
+          app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+      <TextView
+          android:id="@+id/textView12"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text="@string/grow"
+          android:textColor="@color/text_color"
+          android:textSize="16sp"
+          app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+          app:layout_constraintEnd_toEndOf="@+id/textView11"
+          app:layout_constraintStart_toStartOf="@+id/textView11"
+          app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/join_creator_button"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:background="@drawable/button_creator_border"
+          android:text="@string/join_creator"
+          android:textAllCaps="false"
+          android:textColor="@color/white"
+          android:textSize="16sp"
+          app:layout_constraintEnd_toEndOf="@+id/textView12"
+          app:layout_constraintStart_toStartOf="@+id/imageView7"
+          app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+      <TextView
+          android:id="@+id/textView13"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="8dp"
+          android:layout_marginTop="16dp"
+          android:layout_marginEnd="8dp"
+          android:textColor="@color/text_color"
+          android:textSize="14sp"
+          android:textAlignment="center"
+          android:text="@string/term_condition"
+          app:layout_constraintEnd_toEndOf="@+id/join_creator_button"
+          app:layout_constraintStart_toStartOf="@+id/join_creator_button"
+          app:layout_constraintTop_toBottomOf="@+id/join_creator_button" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

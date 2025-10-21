@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.UserNameFragment">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/name_verify"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/image_cross_container"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/name_verify_text_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/verify_chek_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/verified_text"
+            android:src="@drawable/check2x" />
+
+        <TextView
+            android:id="@+id/name_successful"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="@string/number_verified"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/chek_cross_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/close_text"
+            android:src="@drawable/cross_icon"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/user_full_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/full_name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_cross_container" />
+
+    <TextView
+        android:id="@+id/text_appear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/appear_text"
+        android:textColor="@color/dark_grey"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/user_full_name"
+        app:layout_constraintStart_toStartOf="@+id/user_full_name"
+        app:layout_constraintTop_toBottomOf="@+id/user_full_name" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/user_text"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/display_text"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxStrokeColor="@color/light_green"
+        app:layout_constraintEnd_toEndOf="@+id/text_appear"
+        app:layout_constraintStart_toStartOf="@+id/text_appear"
+        app:layout_constraintTop_toBottomOf="@+id/text_appear">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_user_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:inputType="textPersonName"
+            android:maxLength="20" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/eg_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/eg_text"
+        android:textColor="@color/dark_grey"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/user_text"
+        app:layout_constraintTop_toBottomOf="@+id/user_text" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/verify_name_button"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        android:padding="10dp"
+        android:text="@string/continue_button"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:background="@drawable/button_selector"
+        android:enabled="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/user_text"
+        app:layout_constraintStart_toStartOf="@+id/eg_user_name"
+        app:layout_constraintTop_toBottomOf="@+id/eg_user_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

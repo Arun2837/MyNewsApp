@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_list_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/home_profile_image"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/profile_image"
+                android:src="@drawable/profile_home_24" />
+
+            <TextView
+                android:id="@+id/home_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/full_name"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/home_chek_image"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/image_des"
+                android:src="@drawable/verified_icon" />
+
+            <TextView
+                android:id="@+id/home_profile_follow_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/follow_text"
+                android:textColor="@color/light_green"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/home_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/home_time_text"
+                android:textColor="@color/dark_grey"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/home_three_dot"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/image_des"
+                android:src="@drawable/threedot" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/home_banner_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/image_des"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:srcCompat="@drawable/join_as_creator_group" />
+
+        <TextView
+            android:id="@+id/home_heading_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/home_heading_text"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_banner_image" />
+
+        <TextView
+            android:id="@+id/home_profile_state"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/home_state"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/home_heading_text"
+            app:layout_constraintTop_toBottomOf="@+id/home_heading_text" />
+
+        <TextView
+            android:id="@+id/home_profile_state_news"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="@string/home_state_news"
+            app:layout_constraintBottom_toBottomOf="@+id/home_profile_state"
+            app:layout_constraintStart_toEndOf="@+id/home_profile_state"
+            app:layout_constraintTop_toTopOf="@+id/home_profile_state" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/home_profile_state"
+            app:layout_constraintTop_toBottomOf="@+id/home_profile_state">
+
+            <ImageView
+                android:id="@+id/home_like_image"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/image_des"
+                android:src="@drawable/thumbs_up" />
+
+            <ImageView
+                android:id="@+id/home_chat_image"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/image_des"
+                android:src="@drawable/chat" />
+
+            <ImageView
+                android:id="@+id/home_share_image"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:backgroundTint="@color/whatsapp_color"
+                android:layout_weight="1"
+                android:contentDescription="@string/image_des"
+                android:src="@drawable/home_share" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/home_whatsapp_image"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:backgroundTint="@color/whatsapp_color"
+                android:layout_weight="1"
+                android:contentDescription="@string/image_des"
+                android:src="@drawable/whatsapp_black" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
