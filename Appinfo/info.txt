@@ -1,0 +1,1 @@
+MyNews is a local and state wise news app and a Web interface. A Video First product, the platform aims to provide neighbourhood news and happenings from over 1,10,000 PIN Codes across the nation. The platform hosts video news created by my village local news professionals.
